@@ -1,15 +1,17 @@
 <template>
-    <v-app>
-        <v-container>
-            <router-view></router-view>
-        </v-container>
-    </v-app>
+    <Header/>
+    <v-container>
+        <router-view></router-view>
+    </v-container>
 </template>
 
 <script>
-    export default {
-        name: "FullPage"
-    }
+import Header from "@/layouts/components/Header";
+
+export default {
+  name: "FullPage",
+  components: {Header},
+}
 </script>
 
 <style scoped>
